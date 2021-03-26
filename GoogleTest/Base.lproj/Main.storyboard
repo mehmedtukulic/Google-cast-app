@@ -16,56 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8L-cj-W1S" userLabel="line">
-                                <rect key="frame" x="206" y="44" width="2" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="2" id="lc4-8P-vf7"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ecm-LP-Tx0">
-                                <rect key="frame" x="208" y="89" width="206" height="773"/>
+                                <rect key="frame" x="0.0" y="89" width="414" height="679"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video files" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPp-RL-vN7">
-                                <rect key="frame" x="232" y="59" width="158" height="21"/>
+                                <rect key="frame" x="167" y="59" width="80" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tY2-dJ-vse">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5n-7U-2Qw" customClass="GCKUICastButton">
+                                <rect key="frame" x="24" y="788" width="366" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="kTk-ni-bkS"/>
+                                    <constraint firstAttribute="height" constant="50" id="i6n-3c-PNA"/>
                                 </constraints>
-                            </view>
+                                <state key="normal" title="  PLAY">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.47634011510000002" blue="0.96475344900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IBx-rr-SPw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JPp-RL-vN7" firstAttribute="leading" secondItem="F8L-cj-W1S" secondAttribute="trailing" constant="24" id="0dM-qW-u7K"/>
-                            <constraint firstItem="ecm-LP-Tx0" firstAttribute="top" secondItem="tY2-dJ-vse" secondAttribute="bottom" id="4tv-yp-S7o"/>
-                            <constraint firstItem="tY2-dJ-vse" firstAttribute="top" secondItem="JPp-RL-vN7" secondAttribute="bottom" constant="8" symbolic="YES" id="D6X-Gn-ucn"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="F8L-cj-W1S" secondAttribute="bottom" id="GCk-9W-VZB"/>
+                            <constraint firstItem="IBx-rr-SPw" firstAttribute="bottom" secondItem="z5n-7U-2Qw" secondAttribute="bottom" constant="24" id="6nZ-jd-nbH"/>
+                            <constraint firstItem="JPp-RL-vN7" firstAttribute="centerX" secondItem="IBx-rr-SPw" secondAttribute="centerX" id="CQh-5e-7Ih"/>
+                            <constraint firstItem="z5n-7U-2Qw" firstAttribute="leading" secondItem="IBx-rr-SPw" secondAttribute="leading" constant="24" id="FKW-Ef-pdB"/>
                             <constraint firstItem="ecm-LP-Tx0" firstAttribute="trailing" secondItem="IBx-rr-SPw" secondAttribute="trailing" id="J1v-A5-6DT"/>
-                            <constraint firstItem="IBx-rr-SPw" firstAttribute="bottom" secondItem="ecm-LP-Tx0" secondAttribute="bottom" id="WFb-8c-1fk"/>
+                            <constraint firstItem="IBx-rr-SPw" firstAttribute="trailing" secondItem="z5n-7U-2Qw" secondAttribute="trailing" constant="24" id="VTU-ZB-0yD"/>
                             <constraint firstItem="JPp-RL-vN7" firstAttribute="top" secondItem="IBx-rr-SPw" secondAttribute="top" constant="15" id="ZXR-pL-ao1"/>
-                            <constraint firstItem="tY2-dJ-vse" firstAttribute="leading" secondItem="IBx-rr-SPw" secondAttribute="leading" id="au4-uk-c4Q"/>
-                            <constraint firstItem="F8L-cj-W1S" firstAttribute="centerX" secondItem="IBx-rr-SPw" secondAttribute="centerX" id="cZ7-7j-iVB"/>
-                            <constraint firstItem="IBx-rr-SPw" firstAttribute="trailing" secondItem="tY2-dJ-vse" secondAttribute="trailing" id="kXL-Aq-Bwh"/>
-                            <constraint firstItem="ecm-LP-Tx0" firstAttribute="leading" secondItem="F8L-cj-W1S" secondAttribute="trailing" id="l44-go-eRQ"/>
-                            <constraint firstItem="F8L-cj-W1S" firstAttribute="top" secondItem="nTn-dz-qn7" secondAttribute="topMargin" id="rY2-pV-cZx"/>
-                            <constraint firstItem="IBx-rr-SPw" firstAttribute="trailing" secondItem="JPp-RL-vN7" secondAttribute="trailing" constant="24" id="ybg-pD-HMl"/>
+                            <constraint firstItem="ecm-LP-Tx0" firstAttribute="top" secondItem="JPp-RL-vN7" secondAttribute="bottom" constant="9" id="aiN-Ii-DA2"/>
+                            <constraint firstItem="ecm-LP-Tx0" firstAttribute="leading" secondItem="IBx-rr-SPw" secondAttribute="leading" id="bs8-l2-7SQ"/>
+                            <constraint firstItem="z5n-7U-2Qw" firstAttribute="top" secondItem="ecm-LP-Tx0" secondAttribute="bottom" constant="20" id="lWa-ho-4fQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="castButton" destination="z5n-7U-2Qw" id="qRI-wc-btk"/>
                         <outlet property="tableView" destination="ecm-LP-Tx0" id="vbu-uF-jb8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="76"/>
+            <point key="canvasLocation" x="76.811594202898561" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>

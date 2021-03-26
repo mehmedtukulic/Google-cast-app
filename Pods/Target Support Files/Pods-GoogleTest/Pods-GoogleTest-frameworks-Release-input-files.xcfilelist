@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-GoogleTest/Pods-GoogleTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
+${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework

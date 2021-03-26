@@ -23,9 +23,9 @@ class VideoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(model: VideoModel){
-        titleLabel.text = model.title
-        thumbnail.image = model.thumbnail
+    func setup(title: String, image: UIImage){
+        titleLabel.text = title
+        thumbnail.image = image
     }
     
 }
