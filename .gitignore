@@ -1,6 +1,3 @@
 # Exclude Cocoapods
 Pods
-Pods/
-Podfile
 Pods/google-cast-sdk/GoogleCastSDK-ios-4.5.3_static/GoogleCast.framework/GoogleCast
-*Pods/google-cast-sdk/GoogleCastSDK-ios-4.5.3_static/GoogleCast.framework/GoogleCast
