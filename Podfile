@@ -6,6 +6,6 @@ target 'GoogleTest' do
   use_frameworks!
 
   # Pods for GoogleTest
-  
+  pod 'google-cast-sdk', '< 5.0', '>=4.4.2'
 
 end
